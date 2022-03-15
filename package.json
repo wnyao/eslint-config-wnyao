@@ -1,0 +1,24 @@
+{
+  "name": "eslint-config-wnyao",
+  "version": "0.0.0",
+  "private": true,
+  "description": "React eslint config",
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "~4.31.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^3.8.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=6",
+    "prettier": ">=1"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "prettier": "^2.2.1"
+  }
+}
