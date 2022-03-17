@@ -1,36 +1,31 @@
-# eslint-config
-A basic React TypeScript eslint config.
+# eslint-config-wnyao
+
+An basic and opinionated React TypeScript eslint config for my personal use.
 
 ## Installation
 ``` 
-npm i -D git+https://react:QNqrFlz4L5e8yaT@noc-git.orion.co.com/frontend/eslint-config-orion.git
+npm i -D https://github.com/wnyao/eslint-config-wnyao.git
 ```
 
 ## Usage
-Install `eslint-config` in your package
-```json
-{
-  "eslint-config": "^0.0.0"
+Install `eslint-config-wnyao` in your package
+```js
+devDependencies: {
+  "eslint-config-wnyao": "^0.0.0"
 }
 ```
 
-Add to your eslint config `.eslintrc`, or `eslintConfig` field in `package.json`:
+Add to your eslint config :
 
-```json
-{
-  "extends": "../node_modules/eslint-config"
-}
+```js
+module.exports = {
+  extends: 'wnyao',
+  ...
+};
 ```
 
-## Settings (VSCode)
-Make sure the following JSON is added into your VSCode settings file:
+## Settings (local development)
+Make sure the following JSON is added into your local settings file:
 ```
 "eslint.validate": ["typescript", "typescriptreact"],
-```
-
-(Optional) If you need VSCode to auto fix linting errors for you, add the following into your vscode settings:
-```
-"editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true 
-}
 ```
