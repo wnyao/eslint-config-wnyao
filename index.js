@@ -63,8 +63,6 @@ module.exports = {
         }
       }
     ],
-
-    // note you must disable the base rule as it can report incorrect errors
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
@@ -82,12 +80,12 @@ module.exports = {
     'react/jsx-indent': 'off',
     'react/display-name': 'off',
 
-    // React-Hooks Plugin
+    // React-Hooks
     // The following rules are made available via `eslint-plugin-react-hooks`
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
 
-    // React-Native Plugin
+    // React-Native
     'react-native/no-inline-styles': 'warn'
   },
   settings: {
