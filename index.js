@@ -12,14 +12,13 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   extends: [
     'prettier',
-    'prettier/react',
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended'
   ],
   plugins: ['react', 'react-hooks', 'react-native', '@typescript-eslint'],
   rules: {
-    // Common
+    // Common Rules
     'padded-blocks': ['warn', 'never'],
     'comma-dangle': ['error', 'never'],
     'arrow-parens': ['error', 'always'],
@@ -81,7 +80,6 @@ module.exports = {
     'react/display-name': 'off',
 
     // React-Hooks
-    // The following rules are made available via `eslint-plugin-react-hooks`
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
 
